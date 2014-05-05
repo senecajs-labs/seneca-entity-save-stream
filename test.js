@@ -1,6 +1,6 @@
 
 var test          = require('tap').test
-  , senecaImport  = require('./')
+  , entSaveStream = require('./')
   , seneca        = require('seneca')
 
 test('importing data', function(t) {
@@ -8,7 +8,7 @@ test('importing data', function(t) {
 
   var s            = seneca()
     , pear         = s.make('pear')
-    , pearImporter = senecaImport(s, { name$: 'pear' })
+    , pearImporter = entSaveStream(s, { name$: 'pear' })
 
   pearImporter.end({
     name: 'my pear',
