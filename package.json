@@ -12,14 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "seneca-jsonfile-store": "^0.1.4",
     "seneca": "^0.5.17",
     "tap": "^0.4.9",
     "pre-commit": "0.0.7"
   },
   "dependencies": {
     "seneca-act-stream": "0.0.1",
-    "inherits": "^2.0.1",
     "through2": "^0.4.1"
   }
 }

@@ -2,18 +2,11 @@
 var test          = require('tap').test
   , senecaImport  = require('./')
   , seneca        = require('seneca')
-  , defaults      = {
-      log:{
-        map:[
-          {level:'all',handler:'print'}
-        ]
-      }
-    }
 
 test('importing data', function(t) {
   t.plan(1)
 
-  var s            = seneca(defaults)
+  var s            = seneca()
     , pear         = s.make('pear')
     , pearImporter = senecaImport(s, { name$: 'pear' })
 
