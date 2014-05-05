@@ -1,5 +1,5 @@
 {
-  "name": "seneca-import",
+  "name": "seneca-entity-save-stream",
   "version": "0.0.0",
   "description": "Import your data into Seneca",
   "main": "index.js",
@@ -9,7 +9,15 @@
   "pre-commit": [
     "test"
   ],
-  "author": "",
+  "website": "https://github.com/mcollina/seneca-entity-save-stream",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcollina/seneca-entity-save-stream.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mcollina/seneca-entity-save-stream/issues"
+  },
+  "author": "Matteo Collina <hello@matteocollina.com>",
   "license": "ISC",
   "devDependencies": {
     "seneca": "^0.5.17",
