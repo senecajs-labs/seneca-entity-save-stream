@@ -1,33 +1,33 @@
 
-var act     = require('seneca-act-stream')
-  , through = require('through2')
+var ActStream = require('seneca-act-stream')
+  , inherits  = require('inherits')
 
-function entSaveStream(seneca, opts) {
-
-  function buildAndPush(chunk, skip, callback) {
-
-    chunk.name$ = opts.name$
-
-    var ent = seneca.make(chunk)
-      , data = {
-            role: 'entity'
-          , cmd: 'save'
-          , name: opts.name$
-          , ent: ent
-      }
-
-      this.push(data)
-
-      callback()
+function EntitySaveStream(seneca, opts) {
+  if (!(this instanceof EntitySaveStream)) {
+    return new EntitySaveStream(seneca, opts)
   }
 
-  var stream = through.obj({
-    highWaterMark: 16
-  }, buildAndPush)
+  this._opts = opts
+  this._seneca = seneca
 
-  stream.pipe(act(seneca, opts.base))
-
-  return stream
+  ActStream.call(this, seneca, opts.base)
 }
 
-module.exports = entSaveStream
+inherits(EntitySaveStream, ActStream)
+
+EntitySaveStream.prototype._write = function (chunk, skip, callback) {
+
+  chunk.name$ = this._opts.name$
+
+  var ent = this._seneca.make(chunk)
+    , data = {
+         role: 'entity'
+      , cmd: 'save'
+      , name: this._opts.name$
+      , ent: ent
+    }
+
+  ActStream.prototype._write.call(this, data, skip, callback)
+}
+
+module.exports = EntitySaveStream

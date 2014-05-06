@@ -19,3 +19,22 @@ test('importing data', function(t) {
     })
   })
 })
+
+test('finish event', function(t) {
+  t.plan(1)
+
+  var s            = seneca()
+    , pear         = s.make('pear')
+    , pearImporter = entSaveStream(s, { name$: 'pear' })
+
+  pearImporter.on('finish', function() {
+    pear.list$({}, function(err, res) {
+      t.equal(res.length, 1)
+    })
+  })
+
+  pearImporter.end({
+    name: 'my pear',
+    price: 200
+  })
+})
