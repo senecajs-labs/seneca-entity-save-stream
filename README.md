@@ -9,6 +9,10 @@ var seneca        = require('seneca')()
   , pear          = seneca.make('pear')
   , pearImporter  = entSaveStream(seneca, { name$: 'pear' })
 
+pearImporter.on('one', function() {
+  console.log('element saved')
+})
+
 pearImporter.end({
   name: 'my pear',
   price: 200
