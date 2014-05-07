@@ -1,6 +1,6 @@
 {
   "name": "seneca-entity-save-stream",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Import your data into Seneca",
   "main": "index.js",
   "scripts": {
