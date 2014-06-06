@@ -23,7 +23,12 @@ pearImporter.end({
 })
 ```
 
+Acknowledgements
+----------------
+
+This project was kindly sponsored by [nearForm](http://nearform.com).
+
 License
 -------
 
-ISC
+MIT

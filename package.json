@@ -1,6 +1,6 @@
 {
   "name": "seneca-entity-save-stream",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Import your data into Seneca",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "url": "http://github.com/mcollina/seneca-entity-save-stream/issues"
   },
   "author": "Matteo Collina <hello@matteocollina.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "seneca": "^0.5.17",
     "tap": "^0.4.9",
