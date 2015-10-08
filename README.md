@@ -9,14 +9,18 @@
 
 Stream down and build seneca entities!
 
-If you are new to Seneca in general, please take a look at [senecajs.org][]. We have everything from
-tutorials to sample apps to help get you up and running quickly.
+- __Version:__ 0.0.4
+- __Tested on:__ Seneca 0.7.1
+- __Node:__ 0.10, 0.11, 0.12, 4
 
 If you're using this module, and need help, you can:
 
 - Post a [github issue][],
 - Tweet to [@senecajs][],
 - Ask on the [Gitter][gitter-url].
+
+If you are new to Seneca in general, please take a look at [senecajs.org][]. We have everything from
+tutorials to sample apps to help get you up and running quickly.
 
 ## Install
 To install, simply use npm. Remember you will need to install [Seneca.js][] if you haven't already.
