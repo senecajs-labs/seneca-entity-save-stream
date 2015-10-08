@@ -45,7 +45,7 @@ pearImporter.end({
 ```
 
 ## Contributing
-The [Senecajs org][] encourage open participation. If you feel you can help in any way, be it with
+The [Senecajs org][] encourages open participation. If you feel you can help in any way, be it with
 documentation, examples, extra testing, or new features please get in touch.
 
 
