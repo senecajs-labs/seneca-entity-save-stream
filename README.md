@@ -7,6 +7,8 @@
 
 [![js-standard-style][standard-badge]][standard-style]
 
+Stream down and build seneca entities!
+
 If you are new to Seneca in general, please take a look at [senecajs.org][]. We have everything from
 tutorials to sample apps to help get you up and running quickly.
 
@@ -17,28 +19,34 @@ If you're using this module, and need help, you can:
 - Ask on the [Gitter][gitter-url].
 
 ## Install
+To install, simply use npm. Remember you will need to install [Seneca.js][] if you haven't already.
 
 ```sh
 npm install seneca-entity-save-stream
 ```
 
-Stream down and build seneca entities!
+## Test
+To run tests, simply use npm:
+
+```sh
+npm run test
+```
+
+## Example
 
 ```js
-var seneca        = require('seneca')()
-  , entSaveStream = require('seneca-entity-save-stream')
-  , pear          = seneca.make('pear')
-  , pearImporter  = entSaveStream(seneca, { name$: 'pear' })
+var seneca = require('seneca')(),
+    entSaveStream = require('seneca-entity-save-stream')
+    
+var pear = seneca.make('pear'),
+    pearImporter = entSaveStream(seneca, {name$: 'pear'})
 
-pearImporter.on('one', function() {
+pearImporter.on('one', function () {
   console.log('element saved')
 })
 
-pearImporter.end({
-  name: 'my pear',
-  price: 200
-}, function() {
-  pear.list$({}, function(err, res) {
+pearImporter.end({name: 'my pear', price: 200}, function () {
+  pear.list$({}, function (err, res) {
     console.log(res)
   })
 })
