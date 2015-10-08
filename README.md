@@ -16,7 +16,7 @@ If you're using this module, and need help, you can:
 - Tweet to [@senecajs][],
 - Ask on the [Gitter][gitter-url].
 
-### Install
+## Install
 
 ```sh
 npm install seneca-entity-save-stream
