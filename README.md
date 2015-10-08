@@ -35,11 +35,12 @@ npm run test
 ## Example
 
 ```js
-var seneca = require('seneca')(),
-    entSaveStream = require('seneca-entity-save-stream')
-    
-var pear = seneca.make('pear'),
-    pearImporter = entSaveStream(seneca, {name$: 'pear'})
+'use strict'
+
+var seneca = require('seneca')()
+var entSaveStream = require('..')
+var pear = seneca.make('pear')
+var pearImporter = entSaveStream(seneca, { name$: 'pear' })
 
 pearImporter.on('one', function () {
   console.log('element saved')
@@ -47,7 +48,7 @@ pearImporter.on('one', function () {
 
 pearImporter.end({name: 'my pear', price: 200}, function () {
   pear.list$({}, function (err, res) {
-    console.log(res)
+    if (!err) console.log(res)
   })
 })
 ```
