@@ -6,8 +6,6 @@
 [![Build Status][travis-badge]][travis-url]
 [![Gitter][gitter-badge]][gitter-url]
 
-[![js-standard-style][standard-badge]][standard-style]
-
 Stream down and build seneca entities!
 
 - __Version:__ 0.0.4
@@ -75,8 +73,6 @@ Copyright Matteo Collina and other contributors 2015, Licensed under [MIT][].
 [travis-url]: https://travis-ci.org/senecajs/seneca-entity-save-stream
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [gitter-url]: https://gitter.im/senecajs/seneca
-[standard-badge]: https://raw.githubusercontent.com/feross/standard/master/badge.png
-[standard-style]: https://github.com/feross/standard
 
 [MIT]: ./LICENSE
 [Senecajs org]: https://github.com/senecajs/
