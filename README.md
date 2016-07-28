@@ -3,7 +3,6 @@
 
 # seneca-entity-save-stream
 
-[![Build Status][travis-badge]][travis-url]
 [![Gitter][gitter-badge]][gitter-url]
 
 Stream down and build seneca entities!
@@ -66,11 +65,9 @@ This project was kindly sponsored by [nearForm](http://nearform.com).
 
 
 ## License
-Copyright Matteo Collina and other contributors 2015, Licensed under [MIT][].
+Copyright Matteo Collina and other contributors 2014 - 2016, Licensed under [MIT][].
 
 
-[travis-badge]: https://travis-ci.org/senecajs/seneca-entity-save-stream.png?branch=master
-[travis-url]: https://travis-ci.org/senecajs/seneca-entity-save-stream
 [gitter-badge]: https://badges.gitter.im/Join%20Chat.svg
 [gitter-url]: https://gitter.im/senecajs/seneca
 
@@ -78,5 +75,5 @@ Copyright Matteo Collina and other contributors 2015, Licensed under [MIT][].
 [Senecajs org]: https://github.com/senecajs/
 [senecajs.org]: http://senecajs.org/
 [Seneca.js]: https://www.npmjs.com/package/seneca
-[github issue]: https://github.com/senecajs/seneca-entity-save-stream/issues
+[github issue]: https://github.com/senecajs-labs/seneca-entity-save-stream/issues
 [@senecajs]: http://twitter.com/senecajs
