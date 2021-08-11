@@ -5,6 +5,9 @@
 
 [![Gitter][gitter-badge]][gitter-url]
 
+| ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
+|---|---|
+
 Stream down and build seneca entities!
 
 - __Version:__ 0.0.4
